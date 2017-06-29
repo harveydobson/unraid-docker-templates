@@ -1,33 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Container>
-<Beta>False</Beta>
-<Category>MediaApp:Video</Category>
-<Date>2017-07-29</Date>
-  <Name>TvhProxy</Name>
-  <Support>http://lime-technology.com/forum/index.php?topic=49578.0</Support>
-  <Overview>Tvhproxy is a small flask app to proxy requests between Plex Media Server and Tvheadend.</Overview>
-  <Changes>[font size=4]Tvhproxy[/font][/center]
-[b]28.07.2017:[/b] Initial Release</Changes>
-  <Description>You have to run this Docker Container as a seperate IP Address[br]
-  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-  [b]Port 80:[/b] Must be exportet as Port 80 [br]
-  [b]Port 5004:[/b] Must be exportet as Port 5004 [br]
-  </Description>
-  <Project>https://github.com/chvb/Docker-Tvhproxy</Project>
-  <Registry>https://hub.docker.com/r/chvb/docker-tvhproxy</Registry>
-  <Repository>chvb/docker-tvhproxy</Repository>
-  <BindTime>true</BindTime>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Collabora</Name>
+  <Repository>collabora/code</Repository>
+  <Registry>https://hub.docker.com/r/collabora/code/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
   <Privileged>false</Privileged>
-  <Network>br0</Network>
-  <MyIP>192.168.0.100</MyIP>
-  <Privileged>false</Privileged>
- <Environment>
+  <Support>https://hub.docker.com/r/collabora/code/</Support>
+  <Overview>Collabora Online Development Edition - an awesome, Online Office suite image suitable for home use.</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>https://[IP]:[PORT:9980]/loleaflet/dist/admin/admin.html</WebUI>
+  <TemplateURL>https://github.com/chvb/docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/collabora.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1498760881</DateInstalled>
+  <Description>Collabora Online Development Edition - an awesome, Online Office suite image suitable for home use.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9980</HostPort>
+        <ContainerPort>9980</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>cloud\\.yourdomain\\.com</Value>
+      <Name>domain</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>username</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>yourpassword</Value>
+      <Name>password</Name>
+      <Mode/>
+    </Variable>
   </Environment>
-  <Config Name="TvHeadend URL" Target="TVH_URL" Default="http://username:password@yourtvheadendip:9981" Mode="" Description="Container Variable: TVH_URL" Type="Variable" Display="always" Required="false" Mask="false">http://username:password@yourtvheadendip:9981</Config>
-  <Config Name="Tuner Count" Target="TVH_TUNER_COUNT" Default="4" Mode="" Description="Container Variable: TVH_TUNER_COUNT" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
-  <Version>1.0</Version>
-  <WebUI>http://[IP]:[PORT:5004]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/tvhproxy.png</Banner>
-  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/tvhproxy.png</Icon>
-  <ExtraParams></ExtraParams>
+  <Config Name="Host Port 1" Target="9980" Default="" Mode="tcp" Description="Container Port: 9980" Type="Port" Display="always" Required="false" Mask="false">9980</Config>
+  <Config Name="Domain" Target="domain" Default="" Mode="" Description="Container Variable: domain" Type="Variable" Display="always" Required="false" Mask="false">cloud\\.yourdomain\\.com</Config>
+  <Config Name="Username" Target="username" Default="" Mode="" Description="Container Variable: username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Password" Target="password" Default="" Mode="" Description="Container Variable: password" Type="Variable" Display="always" Required="false" Mask="false">yourpassword</Config>
 </Container>
