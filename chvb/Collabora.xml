@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<Beta>False</Beta>
+<Category>MediaApp:Video</Category>
+<Date>2017-07-29</Date>
+  <Name>TvhProxy</Name>
+  <Support>http://lime-technology.com/forum/index.php?topic=49578.0</Support>
+  <Overview>Tvhproxy is a small flask app to proxy requests between Plex Media Server and Tvheadend.</Overview>
+  <Changes>[font size=4]Tvhproxy[/font][/center]
+[b]28.07.2017:[/b] Initial Release</Changes>
+  <Description>You have to run this Docker Container as a seperate IP Address[br]
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]Port 80:[/b] Must be exportet as Port 80 [br]
+  [b]Port 5004:[/b] Must be exportet as Port 5004 [br]
+  </Description>
+  <Project>https://github.com/chvb/Docker-Tvhproxy</Project>
+  <Registry>https://hub.docker.com/r/chvb/docker-tvhproxy</Registry>
+  <Repository>chvb/docker-tvhproxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>br0</Network>
+  <MyIP>192.168.0.100</MyIP>
+  <Privileged>false</Privileged>
+ <Environment>
+  </Environment>
+  <Config Name="TvHeadend URL" Target="TVH_URL" Default="http://username:password@yourtvheadendip:9981" Mode="" Description="Container Variable: TVH_URL" Type="Variable" Display="always" Required="false" Mask="false">http://username:password@yourtvheadendip:9981</Config>
+  <Config Name="Tuner Count" Target="TVH_TUNER_COUNT" Default="4" Mode="" Description="Container Variable: TVH_TUNER_COUNT" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
+  <Version>1.0</Version>
+  <WebUI>http://[IP]:[PORT:5004]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/tvhproxy.png</Banner>
+  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/tvhproxy.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
