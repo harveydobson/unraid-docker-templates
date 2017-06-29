@@ -22,16 +22,6 @@
   <MyIP>192.168.0.100</MyIP>
   <Privileged>false</Privileged>
  <Environment>
-    <Variable>
-      <Value>http://username:password@yourtvheadendip:9981</Value>
-      <Name>TVH_URL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>4</Value>
-      <Name>TVH_TUNER_COUNT</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Config Name="TvHeadend URL" Target="TVH_URL" Default="http://username:password@yourtvheadendip:9981" Mode="" Description="Container Variable: TVH_URL" Type="Variable" Display="always" Required="false" Mask="false">http://username:password@yourtvheadendip:9981</Config>
   <Config Name="Tuner Count" Target="TVH_TUNER_COUNT" Default="4" Mode="" Description="Container Variable: TVH_TUNER_COUNT" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
