@@ -33,7 +33,7 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="TvHeadend URL" Target="TVH_URL" Default="http://uusername:password@yourtvheadendip:9981" Mode="" Description="Container Variable: TVH_URL" Type="Variable" Display="always" Required="false" Mask="false">http://username:password@yourtvheadendip:9981</Config>
+  <Config Name="TvHeadend URL" Target="TVH_URL" Default="http://username:password@yourtvheadendip:9981" Mode="" Description="Container Variable: TVH_URL" Type="Variable" Display="always" Required="false" Mask="false">http://username:password@yourtvheadendip:9981</Config>
   <Config Name="Tuner Count" Target="TVH_TUNER_COUNT" Default="4" Mode="" Description="Container Variable: TVH_TUNER_COUNT" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
   <Version>1.0</Version>
   <WebUI>http://[IP]:[PORT:5004]/</WebUI>
