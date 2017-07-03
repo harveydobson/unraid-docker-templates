@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Collabora</Name>
+  <Name>Collabora/Code</Name>
   <Repository>collabora/code</Repository>
   <Registry>https://hub.docker.com/r/collabora/code/~/dockerfile/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/collabora/code/</Support>
-  <Overview>Collabora Online Development Edition - an awesome, Online Office suite image suitable for home use.</Overview>
+  <Overview>Collabora/Code Online Development Edition - an awesome, Online Office suite image suitable for home use. You can use Collabora/Code for your Nextcloud an edit your Office Documents Online!</Overview>
   <Category>Cloud:</Category>
   <WebUI>https://[IP]:[PORT:9980]/loleaflet/dist/admin/admin.html</WebUI>
   <TemplateURL>https://github.com/chvb/docker-templates</TemplateURL>
