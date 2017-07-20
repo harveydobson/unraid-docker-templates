@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Collabora/Code</Name>
+  <Name>Collabora</Name>
   <Repository>collabora/code</Repository>
   <Registry>https://hub.docker.com/r/collabora/code/~/dockerfile/</Registry>
   <Network>bridge</Network>
