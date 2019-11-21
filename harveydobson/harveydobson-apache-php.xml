@@ -2,8 +2,8 @@
 <Container>
   <Beta>False</Beta>
   <Category>Network:Web</Category>
-  <Name>Apache-PHP</Name>
-  <Support>http://lime-technology.com/forum/index.php?topic=49578.0</Support>
+  <Name>New Apache PHP Container</Name>
+  <Support></Support>
   <Description>
     Apache based web server with basic PHP web server capabilities with the addition of php5-gd, php5-sqlite, php5-intl[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
@@ -11,13 +11,9 @@
     [b]/web[/b] : this path is the web directory[br]
     [b]/web/adminer[/b] : adminer path inside the web directory[br]
     [b]/logs[/b] : this path is the logs directory[br][br]
-
-I have added custom [b]Crontab[/b] functionality.To enable Cron jobs, edit the file [b]crons.conf[/b] in folder [/b]/config[/b]. [br]
-Add as many tasks as you need, save the file, and [b]restart[/b] the container.[br][br]
-
   </Description>
-  <Registry>https://hub.docker.com/r/chvb/docker-apache-php/</Registry>
-  <Repository>chvb/docker-apache-php</Repository>
+  <Registry>https://hub.docker.com/r/harveydobson/apache-php/</Registry>
+  <Repository>harveydobson/apache-php</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
@@ -64,6 +60,6 @@ Add as many tasks as you need, save the file, and [b]restart[/b] the container.[
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8005]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/apache-php.png</Banner>
-  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/apache-php.png</Icon>
+  <Banner>https://www.aspin.co.uk/wp-content/uploads/2015/03/Aspin-logo-RGB-90x90.png</Banner>
+  <Icon>https://www.aspin.co.uk/wp-content/uploads/2015/03/Aspin-logo-RGB-90x90.png</Icon>
 </Container>
