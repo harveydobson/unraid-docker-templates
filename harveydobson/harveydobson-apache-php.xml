@@ -39,17 +39,17 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/disks/SSD/appdata/apache-php/</HostDir>
+      <HostDir>/mnt/user/appdata/%projectdir%</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir>/mnt/disks/SSD/www/</HostDir>
+      <HostDir>/mnt/user/www/%projectdir%</HostDir>
       <ContainerDir>/web</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/disks/SSD/appdata/apache-php/logs/</HostDir>
+      <HostDir>/mnt/disks/SSD/appdata/%projectdir%/logs/</HostDir>
       <ContainerDir>/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
