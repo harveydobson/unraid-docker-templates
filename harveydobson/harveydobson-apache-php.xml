@@ -43,23 +43,23 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-	<Volume>
-      <HostDir>/mnt/user/www/%projectdir%</HostDir>
-      <ContainerDir>/web</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/disks/SSD/appdata/%projectdir%/logs/</HostDir>
-      <ContainerDir>/logs</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
+  	<Volume>
+        <HostDir>/mnt/user/www/%projectdir%</HostDir>
+        <ContainerDir>/web</ContainerDir>
+        <Mode>rw</Mode>
+      </Volume>
+      <Volume>
+        <HostDir>/mnt/disks/SSD/appdata/%projectdir%/logs/</HostDir>
+        <ContainerDir>/logs</ContainerDir>
+        <Mode>rw</Mode>
+      </Volume>
+      <Volume>
+        <HostDir>/etc/localtime</HostDir>
+        <ContainerDir>/etc/localtime</ContainerDir>
+        <Mode>ro</Mode>
+      </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8005]/</WebUI>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>https://www.aspin.co.uk/wp-content/uploads/2015/03/Aspin-logo-RGB-90x90.png</Banner>
   <Icon>https://www.aspin.co.uk/wp-content/uploads/2015/03/Aspin-logo-RGB-90x90.png</Icon>
 </Container>
